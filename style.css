@@ -1,0 +1,87 @@
+/* 
+
+* -> element -> class -> id
+
+*/
+
+* {
+    color: green;
+}
+
+/* element selector */
+h1 {
+    color: blue;
+    font-size: 4rem;
+}
+
+/* class selector 
+   commonly styled things that you'll reuse
+*/
+.heading {
+    color: red;
+}
+
+/* ID selector */
+/* #dating-profile-name {
+    color: rgb(255, 239, 20);
+} */
+
+/* pseudo-classes */
+.heading:hover {
+    color: purple;
+}
+
+/* li:first-of-type {
+    color: red;
+} */
+/* 
+li {
+    border-bottom: 2px solid black;
+} */
+
+li:not(:last-of-type) {
+    border-bottom: 2px solid black;
+}
+
+/* Combinators 
+   space = child element with class and parent with class
+   no space = has both classes
+   + = adjacent sibling
+   > = direct child
+*/
+.intro .heading {
+    /* all elements with heading class inside an intro class element */
+    background-color: black;
+}
+
+.intro.section {
+    background-color: green;
+}
+
+html, body, main {
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* BOX MODEL EXAMPLE */
+.box-model {
+    width: 75%;
+    height: 100vh;
+    max-width: 300px;
+    margin:0px;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    border: 5px solid deeppink;
+    background-color:  teal;
+}
+
+
+
+
